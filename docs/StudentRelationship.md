@@ -1,4 +1,4 @@
-# Clever::StudentRelationship
+# CleverV3::StudentRelationship
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Clever::Staff
+# CleverV3::Staff
 
 ## Properties
 Name | Type | Description | Notes

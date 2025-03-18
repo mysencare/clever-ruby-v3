@@ -1,4 +1,4 @@
-# Clever::Student
+# CleverV3::Student
 
 ## Properties
 Name | Type | Description | Notes

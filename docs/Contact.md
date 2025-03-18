@@ -1,4 +1,4 @@
-# Clever::Contact
+# CleverV3::Contact
 
 ## Properties
 Name | Type | Description | Notes

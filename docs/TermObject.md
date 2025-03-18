@@ -1,4 +1,4 @@
-# Clever::TermObject
+# CleverV3::TermObject
 
 ## Properties
 Name | Type | Description | Notes

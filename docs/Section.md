@@ -1,4 +1,4 @@
-# Clever::Section
+# CleverV3::Section
 
 ## Properties
 Name | Type | Description | Notes

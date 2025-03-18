@@ -1,4 +1,4 @@
-# Clever::User
+# CleverV3::User
 
 ## Properties
 Name | Type | Description | Notes

@@ -90,10 +90,10 @@ require 'clever-ruby-v3/models/users_updated'
 require 'clever-ruby-v3/api/data_api'
 require 'clever-ruby-v3/api/events_api'
 
-module Clever
+module CleverV3
   class << self
     # Customize default settings for the SDK using block.
-    #   Clever.configure do |config|
+    #   CleverV3.configure do |config|
     #     config.username = "xxx"
     #     config.password = "xxx"
     #   end

@@ -1,4 +1,4 @@
-# Clever::TermResponse
+# CleverV3::TermResponse
 
 ## Properties
 Name | Type | Description | Notes

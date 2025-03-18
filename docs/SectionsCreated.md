@@ -1,4 +1,4 @@
-# Clever::SectionsCreated
+# CleverV3::SectionsCreated
 
 ## Properties
 Name | Type | Description | Notes

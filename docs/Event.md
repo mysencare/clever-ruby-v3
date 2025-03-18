@@ -1,4 +1,4 @@
-# Clever::Event
+# CleverV3::Event
 
 ## Properties
 Name | Type | Description | Notes

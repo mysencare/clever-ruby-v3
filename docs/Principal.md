@@ -1,4 +1,4 @@
-# Clever::Principal
+# CleverV3::Principal
 
 ## Properties
 Name | Type | Description | Notes

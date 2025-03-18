@@ -1,4 +1,4 @@
-# Clever::DataApi
+# CleverV3::DataApi
 
 All URIs are relative to *https://api.clever.com/v3.0*
 
@@ -59,12 +59,12 @@ Returns the contact users for a student user
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -75,7 +75,7 @@ opts = {
 begin
   result = api_instance.get_contacts_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_contacts_for_user: #{e}"
 end
 ```
@@ -116,19 +116,19 @@ Returns a specific course
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_course(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_course: #{e}"
 end
 ```
@@ -166,19 +166,19 @@ Returns the course for a section
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_course_for_section(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_course_for_section: #{e}"
 end
 ```
@@ -216,12 +216,12 @@ Returns a list of courses
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -232,7 +232,7 @@ opts = {
 begin
   result = api_instance.get_courses(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_courses: #{e}"
 end
 ```
@@ -273,12 +273,12 @@ Returns the courses for a resource
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -289,7 +289,7 @@ opts = {
 begin
   result = api_instance.get_courses_for_resource(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_courses_for_resource: #{e}"
 end
 ```
@@ -330,12 +330,12 @@ Returns the courses for a school
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -346,7 +346,7 @@ opts = {
 begin
   result = api_instance.get_courses_for_school(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_courses_for_school: #{e}"
 end
 ```
@@ -387,19 +387,19 @@ Returns a specific district
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district: #{e}"
 end
 ```
@@ -437,19 +437,19 @@ Returns the district for a course
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district_for_course(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district_for_course: #{e}"
 end
 ```
@@ -487,19 +487,19 @@ Returns the district for a school
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district_for_school(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district_for_school: #{e}"
 end
 ```
@@ -537,19 +537,19 @@ Returns the district for a section
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district_for_section(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district_for_section: #{e}"
 end
 ```
@@ -587,19 +587,19 @@ Returns the district for a term
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district_for_term(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district_for_term: #{e}"
 end
 ```
@@ -637,19 +637,19 @@ Returns the district for a user
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district_for_user(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district_for_user: #{e}"
 end
 ```
@@ -687,12 +687,12 @@ Returns a list of districts. In practice this will only return the one district 
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   count: 'count_example' # String | 
 }
@@ -700,7 +700,7 @@ opts = {
 begin
   result = api_instance.get_districts(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_districts: #{e}"
 end
 ```
@@ -738,19 +738,19 @@ Returns a specific resource
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_resource(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_resource: #{e}"
 end
 ```
@@ -788,12 +788,12 @@ Returns a list of resources
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -803,7 +803,7 @@ opts = {
 begin
   result = api_instance.get_resources(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_resources: #{e}"
 end
 ```
@@ -843,12 +843,12 @@ Returns the resources for a course
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -859,7 +859,7 @@ opts = {
 begin
   result = api_instance.get_resources_for_course(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_resources_for_course: #{e}"
 end
 ```
@@ -900,12 +900,12 @@ Returns the resources for a section
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -916,7 +916,7 @@ opts = {
 begin
   result = api_instance.get_resources_for_section(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_resources_for_section: #{e}"
 end
 ```
@@ -957,12 +957,12 @@ Returns the resources for a user
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -973,7 +973,7 @@ opts = {
 begin
   result = api_instance.get_resources_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_resources_for_user: #{e}"
 end
 ```
@@ -1014,19 +1014,19 @@ Returns a specific school
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_school(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_school: #{e}"
 end
 ```
@@ -1064,19 +1064,19 @@ Returns the school for a section
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_school_for_section(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_school_for_section: #{e}"
 end
 ```
@@ -1114,12 +1114,12 @@ Returns a list of schools
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1130,7 +1130,7 @@ opts = {
 begin
   result = api_instance.get_schools(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_schools: #{e}"
 end
 ```
@@ -1171,12 +1171,12 @@ Returns the schools for a course
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -1187,7 +1187,7 @@ opts = {
 begin
   result = api_instance.get_schools_for_course(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_schools_for_course: #{e}"
 end
 ```
@@ -1228,12 +1228,12 @@ Returns the schools for a term
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -1244,7 +1244,7 @@ opts = {
 begin
   result = api_instance.get_schools_for_term(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_schools_for_term: #{e}"
 end
 ```
@@ -1285,12 +1285,12 @@ Returns the schools for a user
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   primary: 'primary_example', # String | 
@@ -1302,7 +1302,7 @@ opts = {
 begin
   result = api_instance.get_schools_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_schools_for_user: #{e}"
 end
 ```
@@ -1344,19 +1344,19 @@ Returns a specific section
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_section(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_section: #{e}"
 end
 ```
@@ -1394,12 +1394,12 @@ Returns a list of sections
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1410,7 +1410,7 @@ opts = {
 begin
   result = api_instance.get_sections(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections: #{e}"
 end
 ```
@@ -1451,12 +1451,12 @@ Returns the sections for a course
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -1467,7 +1467,7 @@ opts = {
 begin
   result = api_instance.get_sections_for_course(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_course: #{e}"
 end
 ```
@@ -1508,12 +1508,12 @@ Returns the sections for a resource
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -1524,7 +1524,7 @@ opts = {
 begin
   result = api_instance.get_sections_for_resource(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_resource: #{e}"
 end
 ```
@@ -1565,12 +1565,12 @@ Returns the sections for a school
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -1581,7 +1581,7 @@ opts = {
 begin
   result = api_instance.get_sections_for_school(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_school: #{e}"
 end
 ```
@@ -1622,12 +1622,12 @@ Returns the sections for a term
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -1638,7 +1638,7 @@ opts = {
 begin
   result = api_instance.get_sections_for_term(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_term: #{e}"
 end
 ```
@@ -1679,12 +1679,12 @@ Returns the sections for a user
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -1695,7 +1695,7 @@ opts = {
 begin
   result = api_instance.get_sections_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_user: #{e}"
 end
 ```
@@ -1736,12 +1736,12 @@ Returns the student users for a teacher or contact user
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -1752,7 +1752,7 @@ opts = {
 begin
   result = api_instance.get_students_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_students_for_user: #{e}"
 end
 ```
@@ -1793,12 +1793,12 @@ Returns the teacher users for a student user
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -1809,7 +1809,7 @@ opts = {
 begin
   result = api_instance.get_teachers_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_teachers_for_user: #{e}"
 end
 ```
@@ -1850,19 +1850,19 @@ Returns a specific term
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_term(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_term: #{e}"
 end
 ```
@@ -1900,19 +1900,19 @@ Returns the term for a section
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_term_for_section(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_term_for_section: #{e}"
 end
 ```
@@ -1950,12 +1950,12 @@ Returns a list of terms
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -1966,7 +1966,7 @@ opts = {
 begin
   result = api_instance.get_terms(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_terms: #{e}"
 end
 ```
@@ -2007,12 +2007,12 @@ Returns the terms for a school
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -2023,7 +2023,7 @@ opts = {
 begin
   result = api_instance.get_terms_for_school(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_terms_for_school: #{e}"
 end
 ```
@@ -2064,19 +2064,19 @@ Returns a specific user
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_user(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_user: #{e}"
 end
 ```
@@ -2114,12 +2114,12 @@ Returns a list of contact, district admin, staff, student, and/or teacher users
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   role: 'role_example', # String | 
@@ -2131,7 +2131,7 @@ opts = {
 begin
   result = api_instance.get_users(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_users: #{e}"
 end
 ```
@@ -2173,12 +2173,12 @@ Returns the student and/or teacher users for a resource
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   role: 'role_example', # String | 
@@ -2190,7 +2190,7 @@ opts = {
 begin
   result = api_instance.get_users_for_resource(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_users_for_resource: #{e}"
 end
 ```
@@ -2232,12 +2232,12 @@ Returns the staff, student, and/or teacher users for a school
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   role: 'role_example', # String | 
@@ -2250,7 +2250,7 @@ opts = {
 begin
   result = api_instance.get_users_for_school(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_users_for_school: #{e}"
 end
 ```
@@ -2293,12 +2293,12 @@ Returns the student and/or teacher users for a section
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   role: 'role_example', # String | 
@@ -2310,7 +2310,7 @@ opts = {
 begin
   result = api_instance.get_users_for_section(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_users_for_section: #{e}"
 end
 ```

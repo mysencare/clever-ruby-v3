@@ -1,4 +1,4 @@
-# Clever::ResourcesResponse
+# CleverV3::ResourcesResponse
 
 ## Properties
 Name | Type | Description | Notes

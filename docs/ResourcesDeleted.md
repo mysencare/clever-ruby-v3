@@ -1,4 +1,4 @@
-# Clever::ResourcesDeleted
+# CleverV3::ResourcesDeleted
 
 ## Properties
 Name | Type | Description | Notes

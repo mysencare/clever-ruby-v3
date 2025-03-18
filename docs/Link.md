@@ -1,4 +1,4 @@
-# Clever::Link
+# CleverV3::Link
 
 ## Properties
 Name | Type | Description | Notes

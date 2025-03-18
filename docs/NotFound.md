@@ -1,4 +1,4 @@
-# Clever::NotFound
+# CleverV3::NotFound
 
 ## Properties
 Name | Type | Description | Notes

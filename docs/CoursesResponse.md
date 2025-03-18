@@ -1,4 +1,4 @@
-# Clever::CoursesResponse
+# CleverV3::CoursesResponse
 
 ## Properties
 Name | Type | Description | Notes

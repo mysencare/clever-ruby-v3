@@ -1,4 +1,4 @@
-# Clever::ResourcesUpdated
+# CleverV3::ResourcesUpdated
 
 ## Properties
 Name | Type | Description | Notes

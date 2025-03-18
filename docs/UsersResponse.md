@@ -1,4 +1,4 @@
-# Clever::UsersResponse
+# CleverV3::UsersResponse
 
 ## Properties
 Name | Type | Description | Notes

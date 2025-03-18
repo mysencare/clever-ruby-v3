@@ -1,4 +1,4 @@
-# Clever::CoursesUpdated
+# CleverV3::CoursesUpdated
 
 ## Properties
 Name | Type | Description | Notes

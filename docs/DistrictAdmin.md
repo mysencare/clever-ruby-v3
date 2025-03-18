@@ -1,4 +1,4 @@
-# Clever::DistrictAdmin
+# CleverV3::DistrictAdmin
 
 ## Properties
 Name | Type | Description | Notes

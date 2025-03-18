@@ -1,4 +1,4 @@
-# Clever::TermsDeleted
+# CleverV3::TermsDeleted
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Clever::SectionResponse
+# CleverV3::SectionResponse
 
 ## Properties
 Name | Type | Description | Notes

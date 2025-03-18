@@ -1,4 +1,4 @@
-# Clever::SchoolEnrollment
+# CleverV3::SchoolEnrollment
 
 ## Properties
 Name | Type | Description | Notes

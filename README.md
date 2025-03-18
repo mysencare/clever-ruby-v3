@@ -1,6 +1,6 @@
 # clever-ruby-v3
 
-Clever - the Ruby gem for the Clever API
+CleverV3 - the Ruby gem for the Clever API
 
 The Clever API
 
@@ -54,12 +54,12 @@ Please follow the [installation](#installation) procedure and then run the follo
 # Load the gem
 require 'clever-ruby-v3'
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -70,48 +70,48 @@ opts = {
 begin
   result = api_instance.get_contacts_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_contacts_for_user: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_course(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_course: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_course_for_section(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_course_for_section: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -122,16 +122,16 @@ opts = {
 begin
   result = api_instance.get_courses(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_courses: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -142,16 +142,16 @@ opts = {
 begin
   result = api_instance.get_courses_for_resource(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_courses_for_resource: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -162,112 +162,112 @@ opts = {
 begin
   result = api_instance.get_courses_for_school(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_courses_for_school: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district_for_course(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district_for_course: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district_for_school(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district_for_school: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district_for_section(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district_for_section: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district_for_term(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district_for_term: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_district_for_user(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_district_for_user: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   count: 'count_example' # String | 
 }
@@ -275,32 +275,32 @@ opts = {
 begin
   result = api_instance.get_districts(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_districts: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_resource(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_resource: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -310,16 +310,16 @@ opts = {
 begin
   result = api_instance.get_resources(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_resources: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -330,16 +330,16 @@ opts = {
 begin
   result = api_instance.get_resources_for_course(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_resources_for_course: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -350,16 +350,16 @@ opts = {
 begin
   result = api_instance.get_resources_for_section(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_resources_for_section: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -370,48 +370,48 @@ opts = {
 begin
   result = api_instance.get_resources_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_resources_for_user: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_school(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_school: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_school_for_section(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_school_for_section: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -422,16 +422,16 @@ opts = {
 begin
   result = api_instance.get_schools(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_schools: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -442,16 +442,16 @@ opts = {
 begin
   result = api_instance.get_schools_for_course(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_schools_for_course: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -462,16 +462,16 @@ opts = {
 begin
   result = api_instance.get_schools_for_term(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_schools_for_term: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   primary: 'primary_example', # String | 
@@ -483,32 +483,32 @@ opts = {
 begin
   result = api_instance.get_schools_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_schools_for_user: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_section(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_section: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -519,16 +519,16 @@ opts = {
 begin
   result = api_instance.get_sections(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -539,16 +539,16 @@ opts = {
 begin
   result = api_instance.get_sections_for_course(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_course: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -559,16 +559,16 @@ opts = {
 begin
   result = api_instance.get_sections_for_resource(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_resource: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -579,16 +579,16 @@ opts = {
 begin
   result = api_instance.get_sections_for_school(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_school: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -599,16 +599,16 @@ opts = {
 begin
   result = api_instance.get_sections_for_term(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_term: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -619,16 +619,16 @@ opts = {
 begin
   result = api_instance.get_sections_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_sections_for_user: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -639,16 +639,16 @@ opts = {
 begin
   result = api_instance.get_students_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_students_for_user: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -659,48 +659,48 @@ opts = {
 begin
   result = api_instance.get_teachers_for_user(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_teachers_for_user: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_term(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_term: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_term_for_section(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_term_for_section: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -711,16 +711,16 @@ opts = {
 begin
   result = api_instance.get_terms(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_terms: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   limit: 56, # Integer | 
@@ -731,32 +731,32 @@ opts = {
 begin
   result = api_instance.get_terms_for_school(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_terms_for_school: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_user(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_user: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 opts = { 
   limit: 56, # Integer | 
   role: 'role_example', # String | 
@@ -768,16 +768,16 @@ opts = {
 begin
   result = api_instance.get_users(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_users: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   role: 'role_example', # String | 
@@ -789,16 +789,16 @@ opts = {
 begin
   result = api_instance.get_users_for_resource(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_users_for_resource: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   role: 'role_example', # String | 
@@ -811,16 +811,16 @@ opts = {
 begin
   result = api_instance.get_users_for_school(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_users_for_school: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::DataApi.new
+api_instance = CleverV3::DataApi.new
 id = 'id_example' # String | 
 opts = { 
   role: 'role_example', # String | 
@@ -832,32 +832,32 @@ opts = {
 begin
   result = api_instance.get_users_for_section(id, opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling DataApi->get_users_for_section: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::EventsApi.new
+api_instance = CleverV3::EventsApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_event(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling EventsApi->get_event: #{e}"
 end
 # Setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::EventsApi.new
+api_instance = CleverV3::EventsApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -869,7 +869,7 @@ opts = {
 begin
   result = api_instance.get_events(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling EventsApi->get_events: #{e}"
 end
 ```
@@ -880,122 +880,122 @@ All URIs are relative to *https://api.clever.com/v3.0*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*Clever::DataApi* | [**get_contacts_for_user**](docs/DataApi.md#get_contacts_for_user) | **GET** /users/{id}/mycontacts | 
-*Clever::DataApi* | [**get_course**](docs/DataApi.md#get_course) | **GET** /courses/{id} | 
-*Clever::DataApi* | [**get_course_for_section**](docs/DataApi.md#get_course_for_section) | **GET** /sections/{id}/course | 
-*Clever::DataApi* | [**get_courses**](docs/DataApi.md#get_courses) | **GET** /courses | 
-*Clever::DataApi* | [**get_courses_for_resource**](docs/DataApi.md#get_courses_for_resource) | **GET** /resources/{id}/courses | 
-*Clever::DataApi* | [**get_courses_for_school**](docs/DataApi.md#get_courses_for_school) | **GET** /schools/{id}/courses | 
-*Clever::DataApi* | [**get_district**](docs/DataApi.md#get_district) | **GET** /districts/{id} | 
-*Clever::DataApi* | [**get_district_for_course**](docs/DataApi.md#get_district_for_course) | **GET** /courses/{id}/district | 
-*Clever::DataApi* | [**get_district_for_school**](docs/DataApi.md#get_district_for_school) | **GET** /schools/{id}/district | 
-*Clever::DataApi* | [**get_district_for_section**](docs/DataApi.md#get_district_for_section) | **GET** /sections/{id}/district | 
-*Clever::DataApi* | [**get_district_for_term**](docs/DataApi.md#get_district_for_term) | **GET** /terms/{id}/district | 
-*Clever::DataApi* | [**get_district_for_user**](docs/DataApi.md#get_district_for_user) | **GET** /users/{id}/district | 
-*Clever::DataApi* | [**get_districts**](docs/DataApi.md#get_districts) | **GET** /districts | 
-*Clever::DataApi* | [**get_resource**](docs/DataApi.md#get_resource) | **GET** /resources/{id} | 
-*Clever::DataApi* | [**get_resources**](docs/DataApi.md#get_resources) | **GET** /resources | 
-*Clever::DataApi* | [**get_resources_for_course**](docs/DataApi.md#get_resources_for_course) | **GET** /courses/{id}/resources | 
-*Clever::DataApi* | [**get_resources_for_section**](docs/DataApi.md#get_resources_for_section) | **GET** /sections/{id}/resources | 
-*Clever::DataApi* | [**get_resources_for_user**](docs/DataApi.md#get_resources_for_user) | **GET** /users/{id}/resources | 
-*Clever::DataApi* | [**get_school**](docs/DataApi.md#get_school) | **GET** /schools/{id} | 
-*Clever::DataApi* | [**get_school_for_section**](docs/DataApi.md#get_school_for_section) | **GET** /sections/{id}/school | 
-*Clever::DataApi* | [**get_schools**](docs/DataApi.md#get_schools) | **GET** /schools | 
-*Clever::DataApi* | [**get_schools_for_course**](docs/DataApi.md#get_schools_for_course) | **GET** /courses/{id}/schools | 
-*Clever::DataApi* | [**get_schools_for_term**](docs/DataApi.md#get_schools_for_term) | **GET** /terms/{id}/schools | 
-*Clever::DataApi* | [**get_schools_for_user**](docs/DataApi.md#get_schools_for_user) | **GET** /users/{id}/schools | 
-*Clever::DataApi* | [**get_section**](docs/DataApi.md#get_section) | **GET** /sections/{id} | 
-*Clever::DataApi* | [**get_sections**](docs/DataApi.md#get_sections) | **GET** /sections | 
-*Clever::DataApi* | [**get_sections_for_course**](docs/DataApi.md#get_sections_for_course) | **GET** /courses/{id}/sections | 
-*Clever::DataApi* | [**get_sections_for_resource**](docs/DataApi.md#get_sections_for_resource) | **GET** /resources/{id}/sections | 
-*Clever::DataApi* | [**get_sections_for_school**](docs/DataApi.md#get_sections_for_school) | **GET** /schools/{id}/sections | 
-*Clever::DataApi* | [**get_sections_for_term**](docs/DataApi.md#get_sections_for_term) | **GET** /terms/{id}/sections | 
-*Clever::DataApi* | [**get_sections_for_user**](docs/DataApi.md#get_sections_for_user) | **GET** /users/{id}/sections | 
-*Clever::DataApi* | [**get_students_for_user**](docs/DataApi.md#get_students_for_user) | **GET** /users/{id}/mystudents | 
-*Clever::DataApi* | [**get_teachers_for_user**](docs/DataApi.md#get_teachers_for_user) | **GET** /users/{id}/myteachers | 
-*Clever::DataApi* | [**get_term**](docs/DataApi.md#get_term) | **GET** /terms/{id} | 
-*Clever::DataApi* | [**get_term_for_section**](docs/DataApi.md#get_term_for_section) | **GET** /sections/{id}/term | 
-*Clever::DataApi* | [**get_terms**](docs/DataApi.md#get_terms) | **GET** /terms | 
-*Clever::DataApi* | [**get_terms_for_school**](docs/DataApi.md#get_terms_for_school) | **GET** /schools/{id}/terms | 
-*Clever::DataApi* | [**get_user**](docs/DataApi.md#get_user) | **GET** /users/{id} | 
-*Clever::DataApi* | [**get_users**](docs/DataApi.md#get_users) | **GET** /users | 
-*Clever::DataApi* | [**get_users_for_resource**](docs/DataApi.md#get_users_for_resource) | **GET** /resources/{id}/users | 
-*Clever::DataApi* | [**get_users_for_school**](docs/DataApi.md#get_users_for_school) | **GET** /schools/{id}/users | 
-*Clever::DataApi* | [**get_users_for_section**](docs/DataApi.md#get_users_for_section) | **GET** /sections/{id}/users | 
-*Clever::EventsApi* | [**get_event**](docs/EventsApi.md#get_event) | **GET** /events/{id} | 
-*Clever::EventsApi* | [**get_events**](docs/EventsApi.md#get_events) | **GET** /events | 
+*CleverV3::DataApi* | [**get_contacts_for_user**](docs/DataApi.md#get_contacts_for_user) | **GET** /users/{id}/mycontacts | 
+*CleverV3::DataApi* | [**get_course**](docs/DataApi.md#get_course) | **GET** /courses/{id} | 
+*CleverV3::DataApi* | [**get_course_for_section**](docs/DataApi.md#get_course_for_section) | **GET** /sections/{id}/course | 
+*CleverV3::DataApi* | [**get_courses**](docs/DataApi.md#get_courses) | **GET** /courses | 
+*CleverV3::DataApi* | [**get_courses_for_resource**](docs/DataApi.md#get_courses_for_resource) | **GET** /resources/{id}/courses | 
+*CleverV3::DataApi* | [**get_courses_for_school**](docs/DataApi.md#get_courses_for_school) | **GET** /schools/{id}/courses | 
+*CleverV3::DataApi* | [**get_district**](docs/DataApi.md#get_district) | **GET** /districts/{id} | 
+*CleverV3::DataApi* | [**get_district_for_course**](docs/DataApi.md#get_district_for_course) | **GET** /courses/{id}/district | 
+*CleverV3::DataApi* | [**get_district_for_school**](docs/DataApi.md#get_district_for_school) | **GET** /schools/{id}/district | 
+*CleverV3::DataApi* | [**get_district_for_section**](docs/DataApi.md#get_district_for_section) | **GET** /sections/{id}/district | 
+*CleverV3::DataApi* | [**get_district_for_term**](docs/DataApi.md#get_district_for_term) | **GET** /terms/{id}/district | 
+*CleverV3::DataApi* | [**get_district_for_user**](docs/DataApi.md#get_district_for_user) | **GET** /users/{id}/district | 
+*CleverV3::DataApi* | [**get_districts**](docs/DataApi.md#get_districts) | **GET** /districts | 
+*CleverV3::DataApi* | [**get_resource**](docs/DataApi.md#get_resource) | **GET** /resources/{id} | 
+*CleverV3::DataApi* | [**get_resources**](docs/DataApi.md#get_resources) | **GET** /resources | 
+*CleverV3::DataApi* | [**get_resources_for_course**](docs/DataApi.md#get_resources_for_course) | **GET** /courses/{id}/resources | 
+*CleverV3::DataApi* | [**get_resources_for_section**](docs/DataApi.md#get_resources_for_section) | **GET** /sections/{id}/resources | 
+*CleverV3::DataApi* | [**get_resources_for_user**](docs/DataApi.md#get_resources_for_user) | **GET** /users/{id}/resources | 
+*CleverV3::DataApi* | [**get_school**](docs/DataApi.md#get_school) | **GET** /schools/{id} | 
+*CleverV3::DataApi* | [**get_school_for_section**](docs/DataApi.md#get_school_for_section) | **GET** /sections/{id}/school | 
+*CleverV3::DataApi* | [**get_schools**](docs/DataApi.md#get_schools) | **GET** /schools | 
+*CleverV3::DataApi* | [**get_schools_for_course**](docs/DataApi.md#get_schools_for_course) | **GET** /courses/{id}/schools | 
+*CleverV3::DataApi* | [**get_schools_for_term**](docs/DataApi.md#get_schools_for_term) | **GET** /terms/{id}/schools | 
+*CleverV3::DataApi* | [**get_schools_for_user**](docs/DataApi.md#get_schools_for_user) | **GET** /users/{id}/schools | 
+*CleverV3::DataApi* | [**get_section**](docs/DataApi.md#get_section) | **GET** /sections/{id} | 
+*CleverV3::DataApi* | [**get_sections**](docs/DataApi.md#get_sections) | **GET** /sections | 
+*CleverV3::DataApi* | [**get_sections_for_course**](docs/DataApi.md#get_sections_for_course) | **GET** /courses/{id}/sections | 
+*CleverV3::DataApi* | [**get_sections_for_resource**](docs/DataApi.md#get_sections_for_resource) | **GET** /resources/{id}/sections | 
+*CleverV3::DataApi* | [**get_sections_for_school**](docs/DataApi.md#get_sections_for_school) | **GET** /schools/{id}/sections | 
+*CleverV3::DataApi* | [**get_sections_for_term**](docs/DataApi.md#get_sections_for_term) | **GET** /terms/{id}/sections | 
+*CleverV3::DataApi* | [**get_sections_for_user**](docs/DataApi.md#get_sections_for_user) | **GET** /users/{id}/sections | 
+*CleverV3::DataApi* | [**get_students_for_user**](docs/DataApi.md#get_students_for_user) | **GET** /users/{id}/mystudents | 
+*CleverV3::DataApi* | [**get_teachers_for_user**](docs/DataApi.md#get_teachers_for_user) | **GET** /users/{id}/myteachers | 
+*CleverV3::DataApi* | [**get_term**](docs/DataApi.md#get_term) | **GET** /terms/{id} | 
+*CleverV3::DataApi* | [**get_term_for_section**](docs/DataApi.md#get_term_for_section) | **GET** /sections/{id}/term | 
+*CleverV3::DataApi* | [**get_terms**](docs/DataApi.md#get_terms) | **GET** /terms | 
+*CleverV3::DataApi* | [**get_terms_for_school**](docs/DataApi.md#get_terms_for_school) | **GET** /schools/{id}/terms | 
+*CleverV3::DataApi* | [**get_user**](docs/DataApi.md#get_user) | **GET** /users/{id} | 
+*CleverV3::DataApi* | [**get_users**](docs/DataApi.md#get_users) | **GET** /users | 
+*CleverV3::DataApi* | [**get_users_for_resource**](docs/DataApi.md#get_users_for_resource) | **GET** /resources/{id}/users | 
+*CleverV3::DataApi* | [**get_users_for_school**](docs/DataApi.md#get_users_for_school) | **GET** /schools/{id}/users | 
+*CleverV3::DataApi* | [**get_users_for_section**](docs/DataApi.md#get_users_for_section) | **GET** /sections/{id}/users | 
+*CleverV3::EventsApi* | [**get_event**](docs/EventsApi.md#get_event) | **GET** /events/{id} | 
+*CleverV3::EventsApi* | [**get_events**](docs/EventsApi.md#get_events) | **GET** /events | 
 
 ## Documentation for Models
 
- - [Clever::BadRequest](docs/BadRequest.md)
- - [Clever::Contact](docs/Contact.md)
- - [Clever::Course](docs/Course.md)
- - [Clever::CourseObject](docs/CourseObject.md)
- - [Clever::CourseResponse](docs/CourseResponse.md)
- - [Clever::CoursesCreated](docs/CoursesCreated.md)
- - [Clever::CoursesDeleted](docs/CoursesDeleted.md)
- - [Clever::CoursesResponse](docs/CoursesResponse.md)
- - [Clever::CoursesUpdated](docs/CoursesUpdated.md)
- - [Clever::Credentials](docs/Credentials.md)
- - [Clever::District](docs/District.md)
- - [Clever::DistrictAdmin](docs/DistrictAdmin.md)
- - [Clever::DistrictContact](docs/DistrictContact.md)
- - [Clever::DistrictObject](docs/DistrictObject.md)
- - [Clever::DistrictResponse](docs/DistrictResponse.md)
- - [Clever::DistrictsCreated](docs/DistrictsCreated.md)
- - [Clever::DistrictsDeleted](docs/DistrictsDeleted.md)
- - [Clever::DistrictsResponse](docs/DistrictsResponse.md)
- - [Clever::DistrictsUpdated](docs/DistrictsUpdated.md)
- - [Clever::Event](docs/Event.md)
- - [Clever::EventResponse](docs/EventResponse.md)
- - [Clever::EventsResponse](docs/EventsResponse.md)
- - [Clever::InternalError](docs/InternalError.md)
- - [Clever::Link](docs/Link.md)
- - [Clever::Location](docs/Location.md)
- - [Clever::Name](docs/Name.md)
- - [Clever::NotFound](docs/NotFound.md)
- - [Clever::Principal](docs/Principal.md)
- - [Clever::Resource](docs/Resource.md)
- - [Clever::ResourceObject](docs/ResourceObject.md)
- - [Clever::ResourceResponse](docs/ResourceResponse.md)
- - [Clever::ResourcesCreated](docs/ResourcesCreated.md)
- - [Clever::ResourcesDeleted](docs/ResourcesDeleted.md)
- - [Clever::ResourcesResponse](docs/ResourcesResponse.md)
- - [Clever::ResourcesUpdated](docs/ResourcesUpdated.md)
- - [Clever::Roles](docs/Roles.md)
- - [Clever::School](docs/School.md)
- - [Clever::SchoolEnrollment](docs/SchoolEnrollment.md)
- - [Clever::SchoolObject](docs/SchoolObject.md)
- - [Clever::SchoolResponse](docs/SchoolResponse.md)
- - [Clever::SchoolsCreated](docs/SchoolsCreated.md)
- - [Clever::SchoolsDeleted](docs/SchoolsDeleted.md)
- - [Clever::SchoolsResponse](docs/SchoolsResponse.md)
- - [Clever::SchoolsUpdated](docs/SchoolsUpdated.md)
- - [Clever::Section](docs/Section.md)
- - [Clever::SectionObject](docs/SectionObject.md)
- - [Clever::SectionResponse](docs/SectionResponse.md)
- - [Clever::SectionsCreated](docs/SectionsCreated.md)
- - [Clever::SectionsDeleted](docs/SectionsDeleted.md)
- - [Clever::SectionsResponse](docs/SectionsResponse.md)
- - [Clever::SectionsUpdated](docs/SectionsUpdated.md)
- - [Clever::Staff](docs/Staff.md)
- - [Clever::Student](docs/Student.md)
- - [Clever::StudentRelationship](docs/StudentRelationship.md)
- - [Clever::Teacher](docs/Teacher.md)
- - [Clever::Term](docs/Term.md)
- - [Clever::TermObject](docs/TermObject.md)
- - [Clever::TermResponse](docs/TermResponse.md)
- - [Clever::TermsCreated](docs/TermsCreated.md)
- - [Clever::TermsDeleted](docs/TermsDeleted.md)
- - [Clever::TermsResponse](docs/TermsResponse.md)
- - [Clever::TermsUpdated](docs/TermsUpdated.md)
- - [Clever::User](docs/User.md)
- - [Clever::UserObject](docs/UserObject.md)
- - [Clever::UserResponse](docs/UserResponse.md)
- - [Clever::UsersCreated](docs/UsersCreated.md)
- - [Clever::UsersDeleted](docs/UsersDeleted.md)
- - [Clever::UsersResponse](docs/UsersResponse.md)
- - [Clever::UsersUpdated](docs/UsersUpdated.md)
+ - [CleverV3::BadRequest](docs/BadRequest.md)
+ - [CleverV3::Contact](docs/Contact.md)
+ - [CleverV3::Course](docs/Course.md)
+ - [CleverV3::CourseObject](docs/CourseObject.md)
+ - [CleverV3::CourseResponse](docs/CourseResponse.md)
+ - [CleverV3::CoursesCreated](docs/CoursesCreated.md)
+ - [CleverV3::CoursesDeleted](docs/CoursesDeleted.md)
+ - [CleverV3::CoursesResponse](docs/CoursesResponse.md)
+ - [CleverV3::CoursesUpdated](docs/CoursesUpdated.md)
+ - [CleverV3::Credentials](docs/Credentials.md)
+ - [CleverV3::District](docs/District.md)
+ - [CleverV3::DistrictAdmin](docs/DistrictAdmin.md)
+ - [CleverV3::DistrictContact](docs/DistrictContact.md)
+ - [CleverV3::DistrictObject](docs/DistrictObject.md)
+ - [CleverV3::DistrictResponse](docs/DistrictResponse.md)
+ - [CleverV3::DistrictsCreated](docs/DistrictsCreated.md)
+ - [CleverV3::DistrictsDeleted](docs/DistrictsDeleted.md)
+ - [CleverV3::DistrictsResponse](docs/DistrictsResponse.md)
+ - [CleverV3::DistrictsUpdated](docs/DistrictsUpdated.md)
+ - [CleverV3::Event](docs/Event.md)
+ - [CleverV3::EventResponse](docs/EventResponse.md)
+ - [CleverV3::EventsResponse](docs/EventsResponse.md)
+ - [CleverV3::InternalError](docs/InternalError.md)
+ - [CleverV3::Link](docs/Link.md)
+ - [CleverV3::Location](docs/Location.md)
+ - [CleverV3::Name](docs/Name.md)
+ - [CleverV3::NotFound](docs/NotFound.md)
+ - [CleverV3::Principal](docs/Principal.md)
+ - [CleverV3::Resource](docs/Resource.md)
+ - [CleverV3::ResourceObject](docs/ResourceObject.md)
+ - [CleverV3::ResourceResponse](docs/ResourceResponse.md)
+ - [CleverV3::ResourcesCreated](docs/ResourcesCreated.md)
+ - [CleverV3::ResourcesDeleted](docs/ResourcesDeleted.md)
+ - [CleverV3::ResourcesResponse](docs/ResourcesResponse.md)
+ - [CleverV3::ResourcesUpdated](docs/ResourcesUpdated.md)
+ - [CleverV3::Roles](docs/Roles.md)
+ - [CleverV3::School](docs/School.md)
+ - [CleverV3::SchoolEnrollment](docs/SchoolEnrollment.md)
+ - [CleverV3::SchoolObject](docs/SchoolObject.md)
+ - [CleverV3::SchoolResponse](docs/SchoolResponse.md)
+ - [CleverV3::SchoolsCreated](docs/SchoolsCreated.md)
+ - [CleverV3::SchoolsDeleted](docs/SchoolsDeleted.md)
+ - [CleverV3::SchoolsResponse](docs/SchoolsResponse.md)
+ - [CleverV3::SchoolsUpdated](docs/SchoolsUpdated.md)
+ - [CleverV3::Section](docs/Section.md)
+ - [CleverV3::SectionObject](docs/SectionObject.md)
+ - [CleverV3::SectionResponse](docs/SectionResponse.md)
+ - [CleverV3::SectionsCreated](docs/SectionsCreated.md)
+ - [CleverV3::SectionsDeleted](docs/SectionsDeleted.md)
+ - [CleverV3::SectionsResponse](docs/SectionsResponse.md)
+ - [CleverV3::SectionsUpdated](docs/SectionsUpdated.md)
+ - [CleverV3::Staff](docs/Staff.md)
+ - [CleverV3::Student](docs/Student.md)
+ - [CleverV3::StudentRelationship](docs/StudentRelationship.md)
+ - [CleverV3::Teacher](docs/Teacher.md)
+ - [CleverV3::Term](docs/Term.md)
+ - [CleverV3::TermObject](docs/TermObject.md)
+ - [CleverV3::TermResponse](docs/TermResponse.md)
+ - [CleverV3::TermsCreated](docs/TermsCreated.md)
+ - [CleverV3::TermsDeleted](docs/TermsDeleted.md)
+ - [CleverV3::TermsResponse](docs/TermsResponse.md)
+ - [CleverV3::TermsUpdated](docs/TermsUpdated.md)
+ - [CleverV3::User](docs/User.md)
+ - [CleverV3::UserObject](docs/UserObject.md)
+ - [CleverV3::UserResponse](docs/UserResponse.md)
+ - [CleverV3::UsersCreated](docs/UsersCreated.md)
+ - [CleverV3::UsersDeleted](docs/UsersDeleted.md)
+ - [CleverV3::UsersResponse](docs/UsersResponse.md)
+ - [CleverV3::UsersUpdated](docs/UsersUpdated.md)
 
 ## Documentation for Authorization
 

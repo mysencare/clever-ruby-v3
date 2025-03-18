@@ -1,4 +1,4 @@
-# Clever::UsersDeleted
+# CleverV3::UsersDeleted
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Clever::SchoolsCreated
+# CleverV3::SchoolsCreated
 
 ## Properties
 Name | Type | Description | Notes

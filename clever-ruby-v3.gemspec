@@ -16,7 +16,7 @@ require "clever-ruby-v3/version"
 
 Gem::Specification.new do |s|
   s.name        = "commonlit-clever-ruby-v3"
-  s.version     = Clever::VERSION
+  s.version     = CleverV3::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Swagger-Codegen"]
   s.email       = [""]

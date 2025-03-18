@@ -1,4 +1,4 @@
-# Clever::DistrictContact
+# CleverV3::DistrictContact
 
 ## Properties
 Name | Type | Description | Notes

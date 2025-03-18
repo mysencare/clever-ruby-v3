@@ -1,4 +1,4 @@
-# Clever::DistrictObject
+# CleverV3::DistrictObject
 
 ## Properties
 Name | Type | Description | Notes

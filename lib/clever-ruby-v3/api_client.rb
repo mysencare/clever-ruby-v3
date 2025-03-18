@@ -16,7 +16,7 @@ require 'tempfile'
 require 'typhoeus'
 require 'uri'
 
-module Clever
+module CleverV3
   class ApiClient
     # The Configuration object holding settings to be used in the API client.
     attr_accessor :config
@@ -237,7 +237,7 @@ module Clever
         end
       else
         # models, e.g. Pet
-        Clever.const_get(return_type).build_from_hash(data)
+        CleverV3.const_get(return_type).build_from_hash(data)
       end
     end
 

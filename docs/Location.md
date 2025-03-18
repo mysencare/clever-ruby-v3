@@ -1,4 +1,4 @@
-# Clever::Location
+# CleverV3::Location
 
 ## Properties
 Name | Type | Description | Notes

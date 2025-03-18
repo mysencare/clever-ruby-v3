@@ -1,4 +1,4 @@
-# Clever::DistrictResponse
+# CleverV3::DistrictResponse
 
 ## Properties
 Name | Type | Description | Notes

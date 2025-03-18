@@ -1,4 +1,4 @@
-# Clever::Credentials
+# CleverV3::Credentials
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Clever::DistrictsDeleted
+# CleverV3::DistrictsDeleted
 
 ## Properties
 Name | Type | Description | Notes

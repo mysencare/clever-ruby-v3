@@ -1,4 +1,4 @@
-# Clever::EventsApi
+# CleverV3::EventsApi
 
 All URIs are relative to *https://api.clever.com/v3.0*
 
@@ -19,19 +19,19 @@ Returns the specific event
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::EventsApi.new
+api_instance = CleverV3::EventsApi.new
 id = 'id_example' # String | 
 
 
 begin
   result = api_instance.get_event(id)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling EventsApi->get_event: #{e}"
 end
 ```
@@ -69,12 +69,12 @@ Returns a list of events
 # load the gem
 require 'clever-ruby-v3'
 # setup authorization
-Clever.configure do |config|
+CleverV3.configure do |config|
   # Configure OAuth2 access token for authorization: oauth
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = Clever::EventsApi.new
+api_instance = CleverV3::EventsApi.new
 opts = { 
   limit: 56, # Integer | 
   starting_after: 'starting_after_example', # String | 
@@ -86,7 +86,7 @@ opts = {
 begin
   result = api_instance.get_events(opts)
   p result
-rescue Clever::ApiError => e
+rescue CleverV3::ApiError => e
   puts "Exception when calling EventsApi->get_events: #{e}"
 end
 ```

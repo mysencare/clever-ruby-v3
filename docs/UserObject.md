@@ -1,4 +1,4 @@
-# Clever::UserObject
+# CleverV3::UserObject
 
 ## Properties
 Name | Type | Description | Notes

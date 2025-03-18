@@ -1,4 +1,4 @@
-# Clever::DistrictsCreated
+# CleverV3::DistrictsCreated
 
 ## Properties
 Name | Type | Description | Notes

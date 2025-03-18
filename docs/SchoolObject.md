@@ -1,4 +1,4 @@
-# Clever::SchoolObject
+# CleverV3::SchoolObject
 
 ## Properties
 Name | Type | Description | Notes
