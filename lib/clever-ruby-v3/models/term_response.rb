@@ -25,7 +25,7 @@ module CleverV3
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'data' => :'Object'
+        :'data' => :'Term'
       }
     end
 
