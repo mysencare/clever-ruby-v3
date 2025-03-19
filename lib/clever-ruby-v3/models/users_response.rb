@@ -28,8 +28,8 @@ module CleverV3
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'data' => :'Object',
-        :'links' => :'Object'
+        :'data' => :'Array<UserResponse>',
+        :'links' => :'Array<Link>'
       }
     end
 
