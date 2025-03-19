@@ -117,7 +117,7 @@ module CleverV3
       # http body (model)
       post_body = opts[:body] 
 
-      return_type = opts[:return_type] || 'EventsResponse' 
+      # return_type = opts[:return_type] || 'EventsResponse'
 
       auth_names = opts[:auth_names] || ['oauth']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
@@ -126,7 +126,7 @@ module CleverV3
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => return_type)
+        :return_type => 'EventsResponse')
 
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: EventsApi#get_events\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
