@@ -31,11 +31,11 @@ module CleverV3
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'data' => :'',
-        :'previous_attributes' => :'',
-        :'created' => :'',
-        :'id' => :'',
-        :'type' => :''
+        :'data' => :'SchoolObject',
+        :'previous_attributes' => :'Object',
+        :'created' => :'String',
+        :'id' => :'String',
+        :'type' => :'String'
       }
     end
 
