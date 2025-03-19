@@ -84,22 +84,23 @@ module CleverV3
     end
 
     # Attribute type mapping.
+        # Attribute type mapping.
     def self.openapi_types
       {
-        :'district_contact' => :'Object',
-        :'error' => :'Object',
-        :'id' => :'Object',
-        :'last_sync' => :'Object',
-        :'launch_date' => :'Object',
-        :'login_methods' => :'Object',
-        :'mdr_number' => :'Object',
-        :'name' => :'Object',
-        :'nces_id' => :'Object',
-        :'pause_end' => :'Object',
-        :'pause_start' => :'Object',
-        :'portal_url' => :'Object',
-        :'sis_type' => :'Object',
-        :'state' => :'Object'
+        :'district_contact' => :'DistrictContact',
+        :'error' => :'String',
+        :'id' => :'String',
+        :'last_sync' => :'String',
+        :'launch_date' => :'Date',
+        :'login_methods' => :'Array<String>',
+        :'mdr_number' => :'String',
+        :'name' => :'String',
+        :'nces_id' => :'String',
+        :'pause_end' => :'String',
+        :'pause_start' => :'String',
+        :'portal_url' => :'String',
+        :'sis_type' => :'String',
+        :'state' => :'String'
       }
     end
 
@@ -199,7 +200,7 @@ module CleverV3
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      state_validator = EnumAttributeValidator.new('Object', ['running', 'pending', 'error', 'paused', '', 'success'])
+      state_validator = EnumAttributeValidator.new('String', ['running', 'pending', 'error', 'paused', '', 'success'])
       return false unless state_validator.valid?(@state)
       true
     end
@@ -207,7 +208,7 @@ module CleverV3
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] state Object to be assigned
     def state=(state)
-      validator = EnumAttributeValidator.new('Object', ['running', 'pending', 'error', 'paused', '', 'success'])
+      validator = EnumAttributeValidator.new('String', ['running', 'pending', 'error', 'paused', '', 'success'])
       unless validator.valid?(state)
         fail ArgumentError, "invalid value for \"state\", must be one of #{validator.allowable_values}."
       end

@@ -29,11 +29,12 @@ module CleverV3
     end
 
     # Attribute type mapping.
+        # Attribute type mapping.
     def self.openapi_types
       {
-        :'first' => :'Object',
-        :'last' => :'Object',
-        :'middle' => :'Object'
+        :'first' => :'String',
+        :'last' => :'String',
+        :'middle' => :'String'
       }
     end
 

@@ -93,25 +93,26 @@ module CleverV3
     end
 
     # Attribute type mapping.
+        # Attribute type mapping.
     def self.openapi_types
       {
-        :'course' => :'Object',
-        :'created' => :'Object',
-        :'district' => :'Object',
+        :'course' => :'String',
+        :'created' => :'String',
+        :'district' => :'String',
         :'ext' => :'Object',
-        :'grade' => :'Object',
-        :'id' => :'Object',
-        :'last_modified' => :'Object',
-        :'name' => :'Object',
-        :'period' => :'Object',
-        :'school' => :'Object',
-        :'section_number' => :'Object',
-        :'sis_id' => :'Object',
-        :'students' => :'Object',
-        :'subject' => :'Object',
-        :'teacher' => :'Object',
-        :'teachers' => :'Object',
-        :'term_id' => :'Object'
+        :'grade' => :'String',
+        :'id' => :'String',
+        :'last_modified' => :'String',
+        :'name' => :'String',
+        :'period' => :'String',
+        :'school' => :'String',
+        :'section_number' => :'String',
+        :'sis_id' => :'String',
+        :'students' => :'Array<String>',
+        :'subject' => :'String',
+        :'teacher' => :'String',
+        :'teachers' => :'Array<String>',
+        :'term_id' => :'String'
       }
     end
 
@@ -226,9 +227,9 @@ module CleverV3
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      grade_validator = EnumAttributeValidator.new('Object', ['InfantToddler', 'Preschool', 'PreKindergarten', 'TransitionalKindergarten', 'Kindergarten', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', 'PostGraduate', 'Ungraded', 'Other', ''])
+      grade_validator = EnumAttributeValidator.new('String', ['InfantToddler', 'Preschool', 'PreKindergarten', 'TransitionalKindergarten', 'Kindergarten', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', 'PostGraduate', 'Ungraded', 'Other', ''])
       return false unless grade_validator.valid?(@grade)
-      subject_validator = EnumAttributeValidator.new('Object', ['english/language arts', 'math', 'science', 'social studies', 'language', 'homeroom/advisory', 'interventions/online learning', 'technology and engineering', 'PE and health', 'arts and music', 'other', ''])
+      subject_validator = EnumAttributeValidator.new('String', ['english/language arts', 'math', 'science', 'social studies', 'language', 'homeroom/advisory', 'interventions/online learning', 'technology and engineering', 'PE and health', 'arts and music', 'other', ''])
       return false unless subject_validator.valid?(@subject)
       true
     end
@@ -236,7 +237,7 @@ module CleverV3
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] grade Object to be assigned
     def grade=(grade)
-      validator = EnumAttributeValidator.new('Object', ['InfantToddler', 'Preschool', 'PreKindergarten', 'TransitionalKindergarten', 'Kindergarten', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', 'PostGraduate', 'Ungraded', 'Other', ''])
+      validator = EnumAttributeValidator.new('String', ['InfantToddler', 'Preschool', 'PreKindergarten', 'TransitionalKindergarten', 'Kindergarten', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', 'PostGraduate', 'Ungraded', 'Other', ''])
       unless validator.valid?(grade)
         fail ArgumentError, "invalid value for \"grade\", must be one of #{validator.allowable_values}."
       end
@@ -246,7 +247,7 @@ module CleverV3
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] subject Object to be assigned
     def subject=(subject)
-      validator = EnumAttributeValidator.new('Object', ['english/language arts', 'math', 'science', 'social studies', 'language', 'homeroom/advisory', 'interventions/online learning', 'technology and engineering', 'PE and health', 'arts and music', 'other', ''])
+      validator = EnumAttributeValidator.new('String', ['english/language arts', 'math', 'science', 'social studies', 'language', 'homeroom/advisory', 'interventions/online learning', 'technology and engineering', 'PE and health', 'arts and music', 'other', ''])
       unless validator.valid?(subject)
         fail ArgumentError, "invalid value for \"subject\", must be one of #{validator.allowable_values}."
       end

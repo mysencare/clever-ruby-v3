@@ -111,31 +111,32 @@ module CleverV3
     end
 
     # Attribute type mapping.
+        # Attribute type mapping.
     def self.openapi_types
       {
-        :'created' => :'Object',
-        :'credentials' => :'Object',
-        :'dob' => :'Object',
-        :'ell_status' => :'Object',
-        :'enrollments' => :'Object',
+        :'created' => :'String',
+        :'credentials' => :'Credentials',
+        :'dob' => :'String',
+        :'ell_status' => :'String',
+        :'enrollments' => :'Array<SchoolEnrollment>',
         :'ext' => :'Object',
-        :'gender' => :'Object',
-        :'grade' => :'Object',
-        :'graduation_year' => :'Object',
-        :'hispanic_ethnicity' => :'Object',
-        :'home_language' => :'Object',
-        :'iep_status' => :'Object',
-        :'last_modified' => :'Object',
-        :'legacy_id' => :'Object',
-        :'location' => :'Object',
-        :'race' => :'Object',
-        :'school' => :'Object',
-        :'schools' => :'Object',
-        :'sis_id' => :'Object',
-        :'state_id' => :'Object',
-        :'student_number' => :'Object',
-        :'unweighted_gpa' => :'Object',
-        :'weighted_gpa' => :'Object'
+        :'gender' => :'String',
+        :'grade' => :'String',
+        :'graduation_year' => :'String',
+        :'hispanic_ethnicity' => :'String',
+        :'home_language' => :'String',
+        :'iep_status' => :'String',
+        :'last_modified' => :'String',
+        :'legacy_id' => :'String',
+        :'location' => :'Location',
+        :'race' => :'String',
+        :'school' => :'String',
+        :'schools' => :'Array<String>',
+        :'sis_id' => :'String',
+        :'state_id' => :'String',
+        :'student_number' => :'String',
+        :'unweighted_gpa' => :'String',
+        :'weighted_gpa' => :'String'
       }
     end
 
@@ -280,17 +281,17 @@ module CleverV3
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      ell_status_validator = EnumAttributeValidator.new('Object', ['Y', 'N', ''])
+      ell_status_validator = EnumAttributeValidator.new('String', ['Y', 'N', ''])
       return false unless ell_status_validator.valid?(@ell_status)
-      gender_validator = EnumAttributeValidator.new('Object', ['M', 'F', 'X', ''])
+      gender_validator = EnumAttributeValidator.new('String', ['M', 'F', 'X', ''])
       return false unless gender_validator.valid?(@gender)
-      grade_validator = EnumAttributeValidator.new('Object', ['InfantToddler', 'Preschool', 'PreKindergarten', 'TransitionalKindergarten', 'Kindergarten', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', 'PostGraduate', 'Ungraded', 'Other', ''])
+      grade_validator = EnumAttributeValidator.new('String', ['InfantToddler', 'Preschool', 'PreKindergarten', 'TransitionalKindergarten', 'Kindergarten', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', 'PostGraduate', 'Ungraded', 'Other', ''])
       return false unless grade_validator.valid?(@grade)
-      hispanic_ethnicity_validator = EnumAttributeValidator.new('Object', ['Y', 'N', ''])
+      hispanic_ethnicity_validator = EnumAttributeValidator.new('String', ['Y', 'N', ''])
       return false unless hispanic_ethnicity_validator.valid?(@hispanic_ethnicity)
-      home_language_validator = EnumAttributeValidator.new('Object', ['English', 'Albanian', 'Amharic', 'Arabic', 'Bengali', 'Bosnian', 'Burmese', 'Cantonese', 'Chinese', 'Dutch', 'Farsi', 'French', 'German', 'Hebrew', 'Hindi', 'Hmong', 'Ilocano', 'Japanese', 'Javanese', 'Karen', 'Khmer', 'Korean', 'Laotian', 'Latvian', 'Malay', 'Mandarin', 'Nepali', 'Oromo', 'Polish', 'Portuguese', 'Punjabi', 'Romanian', 'Russian', 'Samoan', 'Serbian', 'Somali', 'Spanish', 'Swahili', 'Tagalog', 'Tamil', 'Telugu', 'Thai', 'Tigrinya', 'Turkish', 'Ukrainian', 'Urdu', 'Vietnamese', ''])
+      home_language_validator = EnumAttributeValidator.new('String', ['English', 'Albanian', 'Amharic', 'Arabic', 'Bengali', 'Bosnian', 'Burmese', 'Cantonese', 'Chinese', 'Dutch', 'Farsi', 'French', 'German', 'Hebrew', 'Hindi', 'Hmong', 'Ilocano', 'Japanese', 'Javanese', 'Karen', 'Khmer', 'Korean', 'Laotian', 'Latvian', 'Malay', 'Mandarin', 'Nepali', 'Oromo', 'Polish', 'Portuguese', 'Punjabi', 'Romanian', 'Russian', 'Samoan', 'Serbian', 'Somali', 'Spanish', 'Swahili', 'Tagalog', 'Tamil', 'Telugu', 'Thai', 'Tigrinya', 'Turkish', 'Ukrainian', 'Urdu', 'Vietnamese', ''])
       return false unless home_language_validator.valid?(@home_language)
-      race_validator = EnumAttributeValidator.new('Object', ['Caucasian', 'Asian', 'Black or African American', 'American Indian', 'Hawaiian or Other Pacific Islander', 'Two or More Races', 'Unknown', ''])
+      race_validator = EnumAttributeValidator.new('String', ['Caucasian', 'Asian', 'Black or African American', 'American Indian', 'Hawaiian or Other Pacific Islander', 'Two or More Races', 'Unknown', ''])
       return false unless race_validator.valid?(@race)
       true
     end
@@ -298,7 +299,7 @@ module CleverV3
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] ell_status Object to be assigned
     def ell_status=(ell_status)
-      validator = EnumAttributeValidator.new('Object', ['Y', 'N', ''])
+      validator = EnumAttributeValidator.new('String', ['Y', 'N', ''])
       unless validator.valid?(ell_status)
         fail ArgumentError, "invalid value for \"ell_status\", must be one of #{validator.allowable_values}."
       end
@@ -308,7 +309,7 @@ module CleverV3
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] gender Object to be assigned
     def gender=(gender)
-      validator = EnumAttributeValidator.new('Object', ['M', 'F', 'X', ''])
+      validator = EnumAttributeValidator.new('String', ['M', 'F', 'X', ''])
       unless validator.valid?(gender)
         fail ArgumentError, "invalid value for \"gender\", must be one of #{validator.allowable_values}."
       end
@@ -318,7 +319,7 @@ module CleverV3
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] grade Object to be assigned
     def grade=(grade)
-      validator = EnumAttributeValidator.new('Object', ['InfantToddler', 'Preschool', 'PreKindergarten', 'TransitionalKindergarten', 'Kindergarten', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', 'PostGraduate', 'Ungraded', 'Other', ''])
+      validator = EnumAttributeValidator.new('String', ['InfantToddler', 'Preschool', 'PreKindergarten', 'TransitionalKindergarten', 'Kindergarten', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', 'PostGraduate', 'Ungraded', 'Other', ''])
       unless validator.valid?(grade)
         fail ArgumentError, "invalid value for \"grade\", must be one of #{validator.allowable_values}."
       end
@@ -328,7 +329,7 @@ module CleverV3
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] hispanic_ethnicity Object to be assigned
     def hispanic_ethnicity=(hispanic_ethnicity)
-      validator = EnumAttributeValidator.new('Object', ['Y', 'N', ''])
+      validator = EnumAttributeValidator.new('String', ['Y', 'N', ''])
       unless validator.valid?(hispanic_ethnicity)
         fail ArgumentError, "invalid value for \"hispanic_ethnicity\", must be one of #{validator.allowable_values}."
       end
@@ -338,7 +339,7 @@ module CleverV3
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] home_language Object to be assigned
     def home_language=(home_language)
-      validator = EnumAttributeValidator.new('Object', ['English', 'Albanian', 'Amharic', 'Arabic', 'Bengali', 'Bosnian', 'Burmese', 'Cantonese', 'Chinese', 'Dutch', 'Farsi', 'French', 'German', 'Hebrew', 'Hindi', 'Hmong', 'Ilocano', 'Japanese', 'Javanese', 'Karen', 'Khmer', 'Korean', 'Laotian', 'Latvian', 'Malay', 'Mandarin', 'Nepali', 'Oromo', 'Polish', 'Portuguese', 'Punjabi', 'Romanian', 'Russian', 'Samoan', 'Serbian', 'Somali', 'Spanish', 'Swahili', 'Tagalog', 'Tamil', 'Telugu', 'Thai', 'Tigrinya', 'Turkish', 'Ukrainian', 'Urdu', 'Vietnamese', ''])
+      validator = EnumAttributeValidator.new('String', ['English', 'Albanian', 'Amharic', 'Arabic', 'Bengali', 'Bosnian', 'Burmese', 'Cantonese', 'Chinese', 'Dutch', 'Farsi', 'French', 'German', 'Hebrew', 'Hindi', 'Hmong', 'Ilocano', 'Japanese', 'Javanese', 'Karen', 'Khmer', 'Korean', 'Laotian', 'Latvian', 'Malay', 'Mandarin', 'Nepali', 'Oromo', 'Polish', 'Portuguese', 'Punjabi', 'Romanian', 'Russian', 'Samoan', 'Serbian', 'Somali', 'Spanish', 'Swahili', 'Tagalog', 'Tamil', 'Telugu', 'Thai', 'Tigrinya', 'Turkish', 'Ukrainian', 'Urdu', 'Vietnamese', ''])
       unless validator.valid?(home_language)
         fail ArgumentError, "invalid value for \"home_language\", must be one of #{validator.allowable_values}."
       end
@@ -348,7 +349,7 @@ module CleverV3
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] race Object to be assigned
     def race=(race)
-      validator = EnumAttributeValidator.new('Object', ['Caucasian', 'Asian', 'Black or African American', 'American Indian', 'Hawaiian or Other Pacific Islander', 'Two or More Races', 'Unknown', ''])
+      validator = EnumAttributeValidator.new('String', ['Caucasian', 'Asian', 'Black or African American', 'American Indian', 'Hawaiian or Other Pacific Islander', 'Two or More Races', 'Unknown', ''])
       unless validator.valid?(race)
         fail ArgumentError, "invalid value for \"race\", must be one of #{validator.allowable_values}."
       end
