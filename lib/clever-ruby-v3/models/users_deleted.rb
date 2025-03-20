@@ -28,10 +28,10 @@ module CleverV3
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'data' => :'',
-        :'created' => :'',
-        :'id' => :'',
-        :'type' => :''
+        :'data' => :'UserObject',
+        :'created' => :'String',
+        :'id' => :'String',
+        :'type' => :'String'
       }
     end
 
