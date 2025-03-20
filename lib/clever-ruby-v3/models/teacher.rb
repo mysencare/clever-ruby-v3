@@ -61,19 +61,19 @@ module CleverV3
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'created' => :'Object',
-        :'credentials' => :'Object',
-        :'district' => :'Object',
-        :'ext' => :'Object',
-        :'last_modified' => :'Object',
-        :'legacy_id' => :'Object',
-        :'name' => :'Object',
-        :'school' => :'Object',
-        :'schools' => :'Object',
-        :'sis_id' => :'Object',
-        :'state_id' => :'Object',
-        :'teacher_number' => :'Object',
-        :'title' => :'Object'
+        :'created' => :'String',
+        :'credentials' => :'Credentials',
+        :'district' => :'String',
+        :'ext' => :'String',
+        :'last_modified' => :'String',
+        :'legacy_id' => :'String',
+        :'name' => :'Name',
+        :'school' => :'String',
+        :'schools' => :'Array<String>',
+        :'sis_id' => :'String',
+        :'state_id' => :'String',
+        :'teacher_number' => :'String',
+        :'title' => :'String'
       }
     end
 

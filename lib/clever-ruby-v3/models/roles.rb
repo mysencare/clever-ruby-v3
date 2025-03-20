@@ -37,11 +37,11 @@ module CleverV3
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'contact' => :'Object',
-        :'district_admin' => :'Object',
-        :'staff' => :'Object',
-        :'student' => :'Object',
-        :'teacher' => :'Object'
+        :'contact' => :'Contact',
+        :'district_admin' => :'DistrictAdmin',
+        :'staff' => :'Staff',
+        :'student' => :'Student',
+        :'teacher' => :'Teacher'
       }
     end
 

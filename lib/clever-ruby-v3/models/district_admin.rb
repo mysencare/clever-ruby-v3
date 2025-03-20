@@ -28,8 +28,8 @@ module CleverV3
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'legacy_id' => :'Object',
-        :'title' => :'Object'
+        :'legacy_id' => :'String',
+        :'title' => :'String'
       }
     end
 
