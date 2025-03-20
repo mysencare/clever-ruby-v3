@@ -48,8 +48,8 @@ module CleverV3
         :'email' => :'Object',
         :'id' => :'Object',
         :'last_modified' => :'Object',
-        :'name' => :'Object',
-        :'roles' => :'Object'
+        :'name' => :'Name',
+        :'roles' => :'Roles'
       }
     end
 
