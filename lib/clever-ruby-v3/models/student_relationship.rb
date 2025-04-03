@@ -53,9 +53,9 @@ module CleverV3
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'relationship' => :'Object',
-        :'student' => :'Object',
-        :'type' => :'Object'
+        :'relationship' => :'String',
+        :'student' => :'String',
+        :'type' => :'String'
       }
     end
 
