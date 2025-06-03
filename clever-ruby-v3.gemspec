@@ -15,7 +15,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "clever-ruby-v3/version"
 
 Gem::Specification.new do |s|
-  s.name        = "commonlit-clever-ruby-v3"
+  s.name        = "clever-ruby-v3"
   s.version     = CleverV3::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Swagger-Codegen"]
